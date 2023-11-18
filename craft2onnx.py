@@ -82,7 +82,7 @@ class TextDetection:
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--craftmlt25kpthpath', type=str, default='weights/craft.pth', help='path model craft mlt 25k pytorch') 
-    parser.add_argument('--device', type=str, default='cuda', help='device')  # file/folder, 0 for webcam
+    parser.add_argument('--device', type=str, default='cpu', help='device')  # file/folder, 0 for webcam
     parser.add_argument('--craftonnxpath', type=str, default='onnx_model/craftmlt25k.onnx', help='path save ctaft onnx model')
     opt = parser.parse_args()
     print('*' *10)

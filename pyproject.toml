@@ -1,0 +1,26 @@
+[project]
+name = "craft-onnx"
+version = "0.1.0"
+description = "Origin repo: https://github.com/clovaai/CRAFT-pytorch"
+dependencies = [
+    "torch>=2.1.1",
+    "torchvision>=0.16.1",
+    "opencv-python>=4.8.1.78",
+    "scikit-image>=0.21.0",
+    "scipy>=1.10.1",
+    "onnxruntime>=1.16.2",
+    "onnx>=1.15.0",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
